@@ -4,11 +4,7 @@ const config__oracle_info = require("../config/oracle");
 const COMMON_XE_TABLE = "general";
 const arr_columns__common_sensor_types = [
   "vibration_1_val",
-  "vibration_2_val",
-  "vibration_3_val",
   "noise_1_val",
-  "noise_2_val",
-  "noise_3_val",
 ];
 const arr_columns__sensor_type__tunnel = [
   ...arr_columns__common_sensor_types,
