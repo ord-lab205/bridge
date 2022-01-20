@@ -29,11 +29,11 @@ module.exports = {
     this.conn = await oracledb.getConnection();
   },
 
-  async fn_oper__at_termination() {
+  fn_oper__at_termination() {
     try {
       if (this.conn) {
         conn.close().then(() => {
-          await oracledb.getPool().close(10);
+          oracledb.getPool().close(10);
           process.exit(0);
         });
       }
